@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immersive Astronomical Calendar</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Astronomical Calendar</h1>
+    <div class="month-navigation">
+        <div id="dynamic-visual"></div>
+        <audio id="event-audio" controls style="display:none;"></audio>
+
+            <button id="prev-month">< Prev</button>
+            <span id="current-month"></span>
+            <button id="next-month">Next ></button>
+        </div>
+    </header>
+    <main>
+        <div id="ar-modal" style="display:none;">
+            <div class="ar-content">
+                <!-- AR content will be dynamically generated -->
+                <button id="close-ar-modal">Close</button>
+            </div>
+        </div>
+
+        <div id="calendar">
+            <!-- Calendar content will be dynamically generated -->
+        </div>
+    </main>
+    <div class="background-image"></div>
+    <script src="script.js"></script>
+</body>
+</html>
