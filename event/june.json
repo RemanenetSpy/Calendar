@@ -1,0 +1,37 @@
+[
+    { "date": "*-06-01", "event": "Birth of Kip Thorne, theoretical physicist whose work on gravitational waves transformed our understanding of gravity (1940)", "icon": "👨‍🔬", "visual": "path/to/visuals/kip_thorne.jpg", "audio": "path/to/audio/kip_thorne.mp3", "ar": "path/to/ar/kip_thorne.json" },
+
+    { "date": "*-06-02", "event": "Launch of Mars Express, marking a new era in Martian exploration and high‐resolution planetary science (2003)", "icon": "🚀", "visual": "path/to/visuals/mars_express.jpg", "audio": "path/to/audio/mars_express.mp3", "ar": "path/to/ar/mars_express.json" },
+
+    { "date": "*-06-03", "event": "Publication of detailed analysis of GRB 970508’s afterglow, linking gamma‐ray bursts to cosmological distances (1997)", "icon": "💥", "visual": "path/to/visuals/grb_970508.jpg", "audio": "path/to/audio/grb_970508.mp3", "ar": "path/to/ar/grb_970508.json" },
+
+    { "date": "*-06-04", "event": "Spitzer Space Telescope released detailed infrared images of distant galaxies (2004)", "icon": "🔭", "visual": "path/to/visuals/spitzer.jpg", "audio": "path/to/audio/spitzer.mp3", "ar": "path/to/ar/spitzer.json" },
+
+    { "date": "*-06-05", "event": "Ulysses transmitted data on the Sun’s polar regions, deepening our understanding of solar dynamics (1998)", "icon": "☀️", "visual": "path/to/visuals/ulysses.jpg", "audio": "path/to/audio/ulysses.mp3", "ar": "path/to/ar/ulysses.json" },
+
+    { "date": "*-06-06", "event": "Swift satellite captured an ultra‐long gamma‐ray burst, offering new insights into the deaths of massive stars (2006)", "icon": "💥" },
+    { "date": "*-06-07", "event": "NASA announced refined measurements of the cosmic microwave background by COBE, reinforcing the Big Bang model (1992)", "icon": "🌌" },
+    { "date": "*-06-08", "event": "Launch of Venera 9, which later transmitted the first images from Venus’s surface (1975)", "icon": "🚀" },
+    { "date": "*-06-09", "event": "Hubble provided spectroscopic evidence of an exoplanet’s atmospheric composition (2008)", "icon": "🔭" },
+    { "date": "*-06-10", "event": "Cassini transmitted images of Titan revealing complex organic chemistry in its atmosphere (2004)", "icon": "🚀" },
+    { "date": "*-06-11", "event": "Report of the first confirmed detection of a soft gamma repeater (1990)", "icon": "🌟" },
+    { "date": "*-06-12", "event": "NASA unveiled the Mars Pathfinder spacecraft (1997)", "icon": "🚀" },
+    { "date": "*-06-13", "event": "Hubble transmitted images of the Cat’s Eye Nebula (1995)", "icon": "🌌" },
+    { "date": "*-06-14", "event": "Swift satellite’s first public data release on gamma‐ray bursts (2007)", "icon": "💥" },
+    { "date": "*-06-15", "event": "Compton Gamma Ray Observatory observations revealed high‐energy phenomena in the Milky Way (1992)", "icon": "🔭" },
+    { "date": "*-06-16", "event": "Publication of a study using space observatory data to measure the Hubble constant (2009)", "icon": "📡" },
+    { "date": "*-06-17", "event": "Reanalysis of COBE data refined estimates of the universe’s age (1998)", "icon": "🌌" },
+    { "date": "*-06-18", "event": "Launch of STS-7—the first Space Shuttle mission with a female astronaut (1983)", "icon": "🚀" },
+    { "date": "*-06-19", "event": "Viking 1 entered Mars orbit (1976)", "icon": "🛰️" },
+    { "date": "*-06-20", "event": "Lunar Reconnaissance Orbiter began mapping the Moon’s surface (2009)", "icon": "🌕" },
+    { "date": "*-06-21", "event": "Birth of Donald Menzel, an influential astrophysicist (1901)", "icon": "👨‍🔬" },
+    { "date": "*-06-22", "event": "NASA's Orbital Express mission demonstrated autonomous rendezvous and docking (2007)", "icon": "🛰️" },
+    { "date": "*-06-23", "event": "Discovery and recognition of ‘Hot Jupiters’ reshaped planet formation theories (1999)", "icon": "🌠" },
+    { "date": "*-06-24", "event": "Birth of Fred Hoyle, whose theories transformed our understanding of cosmic element formation (1915)", "icon": "📚" },
+    { "date": "*-06-25", "event": "Announcement of the first detection of a circumstellar disk around a young star (1998)", "icon": "🔭" },
+    { "date": "*-06-26", "event": "Detection of acoustic oscillations in the cosmic microwave background (2000)", "icon": "🌌" },
+    { "date": "*-06-27", "event": "Galileo’s flyby of Ganymede (1996)", "icon": "🛰️" },
+    { "date": "*-06-28", "event": "Announcement of the first confirmed detection of water vapor in an exoplanet’s atmosphere (2005)", "icon": "💧" },
+    { "date": "*-06-29", "event": "Birth of George Ellery Hale, the pioneering solar astronomer (1868)", "icon": "🌞" },
+    { "date": "*-06-30", "event": "Release of results from the Event Horizon Telescope, providing evidence of magnetic fields near a black hole (2018)", "icon": "🌠" }
+]

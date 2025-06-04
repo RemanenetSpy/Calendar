@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Celestial Echoes: The Galactic Rhythm Calendar</title>
+  <style>
+    /* Global Styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    .page {
+      display: none;
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .active {
+      display: block;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      margin: 20px;
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid #fff;
+      color: #fff;
+      transition: background 0.3s, transform 0.3s;
+    }
+    button:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.05);
+    }
+
+    /* Cover Page with Holographic Gradient Animation */
+    #cover {
+      background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+      background-size: 400% 400%;
+      animation: gradientAnimation 15s ease infinite;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    @keyframes gradientAnimation {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    #cover h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    }
+    #cover p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+
+    /* Monthly Page */
+    #month {
+      background: url('https://via.placeholder.com/1200x800?text=Cosmic+Backdrop') no-repeat center center/cover;
+      padding-top: 60px;
+    }
+    #month h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+    .day-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .day-item {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px;
+      width: 100px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .day-item:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Daily Page */
+    #daily {
+      background: #0a0a0a;
+      padding: 40px 20px;
+      overflow-y: auto;
+    }
+    #daily h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    #daily .milestone-img {
+      width: 80%;
+      max-width: 600px;
+      height: auto;
+      margin: 20px auto;
+      border: 5px solid #fff;
+      box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    }
+    #daily .narrative {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .back-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid #fff;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Cover Page -->
+  <div id="cover" class="page active">
+    <h1>Celestial Echoes</h1>
+    <p>The Galactic Rhythm Calendar – an immersive, tactile journey through space, time, and the milestones that shaped our cosmic exploration.</p>
+    <button id="enterCalendar">Enter Calendar</button>
+  </div>
+
+  <!-- Monthly Overview Page -->
+  <div id="month" class="page">
+    <button class="back-btn" id="backToCover">&larr; Back</button>
+    <h2>January 2025</h2>
+    <div class="day-list">
+      <!-- Example days. In a full implementation, this would be dynamically generated -->
+      <div class="day-item" data-day="1">Day 1</div>
+      <div class="day-item" data-day="2">Day 2</div>
+      <div class="day-item" data-day="3">Day 3</div>
+      <div class="day-item" data-day="4">Day 4</div>
+      <div class="day-item" data-day="5">Day 5</div>
+      <div class="day-item" data-day="6">Day 6</div>
+      <div class="day-item" data-day="7">Day 7</div>
+      <!-- Add more days as needed -->
+    </div>
+  </div>
+
+  <!-- Daily Milestone Page -->
+  <div id="daily" class="page">
+    <button class="back-btn" id="backToMonth">&larr; Back</button>
+    <h2 id="dailyTitle">Milestone for Day X</h2>
+    <!-- Placeholder for an artistic illustration -->
+    <img src="https://via.placeholder.com/600x400?text=Space+Illustration" alt="Celestial Illustration" class="milestone-img">
+    <div class="narrative" id="dailyNarrative">
+      <p>This day's milestone marks the historic moment of [Space Event]. Discover how this achievement propelled humanity into the cosmic frontier. Detailed narrative, innovative techniques, and a sense of awe bring the universe to life.</p>
+    </div>
+  </div>
+
+  <script>
+    // Navigation logic between pages
+    const coverPage = document.getElementById('cover');
+    const monthPage = document.getElementById('month');
+    const dailyPage = document.getElementById('daily');
+    const enterBtn = document.getElementById('enterCalendar');
+    const backToCoverBtn = document.getElementById('backToCover');
+    const backToMonthBtn = document.getElementById('backToMonth');
+    const dayItems = document.querySelectorAll('.day-item');
+    const dailyTitle = document.getElementById('dailyTitle');
+    const dailyNarrative = document.getElementById('dailyNarrative');
+
+    // Show monthly page from cover
+    enterBtn.addEventListener('click', () => {
+      coverPage.classList.remove('active');
+      monthPage.classList.add('active');
+    });
+
+    // Return to cover from month
+    backToCoverBtn.addEventListener('click', () => {
+      monthPage.classList.remove('active');
+      coverPage.classList.add('active');
+    });
+
+    // When a day is clicked, load the daily page with sample data
+    dayItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const day = item.getAttribute('data-day');
+        dailyTitle.textContent = `Milestone for January ${day}, 2025`;
+        dailyNarrative.innerHTML = `<p>On January ${day}, 2025, a groundbreaking event in space exploration was commemorated. This milestone reflects the pioneering spirit of discovery, the blend of art and science, and the continuous quest to understand the cosmos.</p>`;
+        monthPage.classList.remove('active');
+        dailyPage.classList.add('active');
+      });
+    });
+
+    // Return to monthly view from daily page
+    backToMonthBtn.addEventListener('click', () => {
+      dailyPage.classList.remove('active');
+      monthPage.classList.add('active');
+    });
+  </script>
+</body>
+</html>
